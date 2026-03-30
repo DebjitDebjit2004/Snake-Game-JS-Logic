@@ -7,11 +7,12 @@
 :root {
     /* Background colors */
     --bg-primary-color: #0c0c0c;
+    --bg-fill-color: #ffae00;
 
     /* Info colors */
 
     --info-high-score-color: #33ff00;
-    --info-score-color: #00ffea;
+    --info-score-color: #ff7b00;
     --info-time-color: #ff0000;
 
     /* Board colors */
@@ -92,8 +93,8 @@ section .infos {
     border: var(--text-primary-color) 0.001rem solid;
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
 }
 
 .block {
@@ -101,4 +102,8 @@ section .infos {
     height: 30px; */
     border: var(--text-primary-color) 1px solid;
     background-color: var(--board-block-color);
+}
+
+.fill {
+    background-color: var(--bg-fill-color);
 }
