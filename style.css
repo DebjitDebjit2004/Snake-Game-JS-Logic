@@ -8,6 +8,7 @@
     /* Background colors */
     --bg-primary-color: #0c0c0c;
     --bg-fill-color: #ffae00;
+    --bg-food-color: rgb(202, 0, 0);
 
     /* Info colors */
 
@@ -106,4 +107,8 @@ section .infos {
 
 .fill {
     background-color: var(--bg-fill-color);
+}
+
+.food {
+    background-color: var(--bg-food-color);
 }
