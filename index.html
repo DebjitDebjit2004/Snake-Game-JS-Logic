@@ -10,42 +10,44 @@
 
 <body>
     <main>
+        <!-- The Main gaming section which contains game HUD & playable grid layout -->
         <section>
+            <!-- Top HUD Panel containing scores and timer -->
             <div class="infos">
                 <div class="info">
-                    <h3 id="high-score"> High Socre:
-                        <span>
-                            00
-                        </span>
-                    </h3>
-                </div>
-                <div class="info">
-                    <h3 id="score"> Socre:
-                        <span>
+                    <h3 id="score"> Score:
+                        <span class="score-value">
                             00
                         </span>
                     </h3>
                 </div>
                 <div class="info">
                     <h3 id="time"> Time:
-                        <span>
+                        <span class="time-value">
                             00:00
                         </span>
                     </h3>
                 </div>
             </div>
+            
+            <!-- Game Board grid generated dynamically via JavaScript -->
             <div class="board">
             </div>
         </section>
+
+        <!-- Initial Start Game Screen Overlay Modal -->
         <div class="startGameModal">
             <h3 class="startGameHeading">Start Game</h3>
             <button class="startGameButton">Start Game</button>
         </div>
+
+        <!-- Game Over Screen that appears when the snake dies, acting as restart Modal -->
         <div class="reStartGameModal">
             <h3 class="reStartGameHeading">Restart The Game</h3>
             <button class="reStartGameButton">Restart Game</button>
         </div>
     </main>
+    <!-- Embedding JS into our App -->
     <script src="app.js"></script>
 </body>
 
